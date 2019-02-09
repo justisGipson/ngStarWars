@@ -1,0 +1,21 @@
+**************************
+RED BADGE INITIAL ASSESSMENT
+**************************
+​
+Create an angular application (clean out the boilerplate stuff) that has a dropdown for these values:
+​
+People 
+Ships 
+Films 
+​
+Then create a input field that a user can put in a search term
+​
+Then a button that sends a service action that sends a get request to this url (as an example for the people API)
+​
+https://swapi.co/api/people/?search=r2
+​
+Make the dropdown values (people, ships, films) fit into the api with on click, and the r2 as the search term in the box
+​
+Show the data that comes back from the api as a list
+​
+This does not need to be deployed.
