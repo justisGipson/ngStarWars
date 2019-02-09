@@ -10,7 +10,7 @@ import { SwapiService } from '../services/swapi.service';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private form: FormBuilder, private SWservice: SwapiService) {
+  constructor(private form: FormBuilder, private SwapiService: SwapiService) {
     
    }
 
