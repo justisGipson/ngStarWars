@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
   people: Observable<Person>[];
   ships: Observable<Ship>[];
   films: Observable<Film>[];
-  private searchTerms = new Subject<string>();
+  // private searchTerms = new Subject<string>();
 
   terms = [
     'People',
@@ -26,24 +26,12 @@ export class SearchComponent implements OnInit {
     'Films'
   ];
 
-  constructor(private fb :FormBuilder, private database: SwapiService) {
+  constructor(private fb: FormBuilder, private database: SwapiService) {
    
    }
 
   ngOnInit(): void {
     
-  }
-
-  findPeople(): void {
-    this.database.findPeople().subscribe(People => {
-      this.people = name;
-    })
-  }
-
-  findFilms(): void {
-    this.database.findFilms().subscribe(Films => {
-      this.films = name;
-    })
   }
 
 }

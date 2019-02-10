@@ -23,8 +23,8 @@ export class SwapiService {
   private personURL = 'https://swapi.co/api/people/'
   private shipURL = 'https://swapi.com/api/starships/'
   private filmURL = 'https://swapi.com/api/films/'
-
-  query: string = '?search=';
+  searchfield = '';
+  query: string = `?search=${this.searchfield}`;
 
   constructor(private http: HttpClient) { }
 
