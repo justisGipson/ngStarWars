@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl} from '@angular/forms'
+import { FormBuilder, FormGroup, FormControl} from '@angular/forms';
+import { Observable, Subject } from 'rxjs';
+
+import { Person } from '../models/person.model';
+import { Film } from '../models/film.model';
+import { Ship } from '../models/ship.model';
 import { SwapiService } from '../services/swapi.service';
 
 @Component({
@@ -8,23 +13,25 @@ import { SwapiService } from '../services/swapi.service';
   styleUrls: ['./search.component.css'],
   providers: [SwapiService]
 })
+
 export class SearchComponent implements OnInit {
-  people: [];
-  ships: [];
-  films: [];
+  people: Observable<Person>[];
+  ships: Observable<Ship>[];
+  films: Observable<Film>[];
+  private searchTerms = new Subject<string>();
 
   terms = [
-    {value: 1, view: 'People'},
-    {value: 2, view: 'Star Ships'},
-    {value: 3, view: 'Films'}
+    'People',
+    'Star Ships',
+    'Films'
   ];
 
   constructor(private fb :FormBuilder, private database: SwapiService) {
    
    }
 
-  ngOnInit() {
-   
+  ngOnInit(): void {
+    
   }
 
   findPeople(): void {

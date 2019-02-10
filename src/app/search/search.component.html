@@ -2,10 +2,10 @@
   <h3>Search for People, Starships or Films from the Star Wars Universe</h3>
   <form (ngSubmit)='onSearch()'>  
     <select
-      formControlName = 'terms' name='terms' required>
-      <option *ngFor='let term of terms' value=""></option>
+      formControlName='term' name='term' required>
+      <option *ngFor='let term of terms' value="{{ term }}">{{ term }}</option>
     </select>
-    <input class='input' type='search' placeholder="search">
+    <input #searchField class='input' type='text' placeholder="search" (input)='search(searchField.value)' />
     <button class='submit' type='submit'>Search</button>
   </form>
 </div>
