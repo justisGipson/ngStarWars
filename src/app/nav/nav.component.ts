@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  showAbout: boolean = false;
+
   title: string = 'Star Wars API Search';
 
   public show: boolean = false;

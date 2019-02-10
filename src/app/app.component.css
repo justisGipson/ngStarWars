@@ -1,10 +1,10 @@
-.stars {
-    background: url('../assets/1r5ued.jpg') no-repeat center left fixed;
+html {
+    background: url('../assets/1r5ued.jpg');
     background-attachment: fixed;
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    margin: auto;
+    margin-left: -1em;
 }
