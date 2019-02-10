@@ -1,0 +1,47 @@
+.container {
+    width: 100vw;
+    background-color: hsla(246, 16%, 88%);
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand {
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Press Start 2p', cursive;
+    color: #f2e12b;
+    margin-left: 0.5em;
+    top: 0.7em;
+    text-shadow: 0.01em 0.01em 0.11em rgb(0, 0, 0);
+    position: absolute;
+    text-decoration-line: none;
+}
+
+.nav-link {
+    color: #f2e12b;
+    margin-left: 1vw; 
+    display: inline;
+    font-size: 1.4em;
+    text-decoration-line: none;
+    font-family: 'Press Start 2p', cursive;
+    text-shadow: 0.01em 0.01em 0.15em rgb(0, 0, 0);
+
+}
+
+button{
+    background-color: transparent;
+    border-radius: .4em;
+    position: relative;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    left: 75vw;
+}
+
+.button {
+    left: 1vw;
+    position: relative;
+    font-size: 2.2em
+}

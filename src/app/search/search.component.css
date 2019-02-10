@@ -1,0 +1,25 @@
+h3 {
+    color: #f2e12b;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.searchField {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    height: 15vh;
+    padding: 1.5em;
+    background-color: hsla(246, 17%, 88%, 0.1);
+}
+
+.input {
+    position: absolute;
+    left: 20vw;
+    margin-top: 5vh;
+}
+
+.submit {
+    left: 23vw;
+    position: absolute;
+    top: 7vw;
+}
