@@ -11,8 +11,5 @@ export interface Person {
     films: string[],
     species: string[],
     starships: string[],
-    vehicles: string[],
-    url: string,
-    created: string,
-    edited: string
+    vehicles: string[]
 }

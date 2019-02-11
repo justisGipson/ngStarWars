@@ -9,8 +9,5 @@ export interface Film {
     starships: string[],
     vehicles: string[],
     characters: string[],
-    planets: [],
-    url: string,
-    created: string,
-    edited: string
+    planets: []
 }
