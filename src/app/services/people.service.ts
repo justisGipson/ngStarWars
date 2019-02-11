@@ -12,6 +12,7 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
+
 export class PeopleService {
 
   constructor(private http: HttpClient) { }

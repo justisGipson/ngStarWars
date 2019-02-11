@@ -12,13 +12,12 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
+
 export class FilmService {
 
   constructor(private http: HttpClient) { }
 
   getFilm(getStuff): Observable<Film[]>{
-    return this.http.get<Film[]>(`https://swapi.co/api/films/?search=${getStuff}`, httpOptions) 
+    return this.http.get<Film[]>(`https://swapi.co/api/films/?search=${getStuff}`, httpOptions)
   }
 }
-console.log()
-

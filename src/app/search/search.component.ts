@@ -8,13 +8,13 @@ import { ShipService } from '../services/ship.service'
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css'],
-  providers: []
+  styleUrls: ['./search.component.css']
 })
 
 export class SearchComponent implements OnInit {
   form: FormGroup;
   results: Object;
+  data = {};
 
   constructor(private formBuilder: FormBuilder,
     private film: FilmService,
