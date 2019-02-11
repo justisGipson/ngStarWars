@@ -1,0 +1,20 @@
+<div *ngIf='results'>
+  <div *ngFor='let data of results.results' class="cards">
+    <div class="shipCard">
+      <div class="shipCardContainer">
+        <h3>{{ data.model }}</h3>
+        <p>{{ data.manufacturer }}</p>
+        <p>{{ data.cost_in_credits }}</p>
+        <p>{{ data.length }}</p>
+        <p>{{ data.max_atmosphering_speed }}</p>
+        <p>{{ data.crew }}</p>
+        <p>{{ data.passengers }}</p>
+        <p>{{ data.cargo_capacity }}</p>
+        <p>{{ data.consumables }}</p>
+        <p>{{ data.hyperdrive_rating }}</p>
+        <p>{{ data.MGLT }}</p>
+        <p>{{ data.starship_class }}</p>
+      </div>
+    </div>
+  </div>
+</div>

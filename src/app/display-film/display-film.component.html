@@ -1,0 +1,14 @@
+<div *ngIf='results'>
+  <div *ngFor='let data of results.results' class="cards">
+    <div class="filmCard">
+      <div class="filmCardContainer">
+        <h3>{{ data.title }}</h3>
+        <p>{{ data.episode_id }}</p>
+        <p>{{ data.opening_crawl }}</p>
+        <p>{{ data.director }}</p>
+        <p>{{ data.producer }}</p>
+        <p>{{ data.release_date }}</p>
+      </div>
+    </div>
+  </div>
+</div>

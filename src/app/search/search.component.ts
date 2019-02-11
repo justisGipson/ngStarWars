@@ -33,14 +33,17 @@ export class SearchComponent implements OnInit {
       this.film.getFilm(this.form.value.getStuff)
         .subscribe(data => {
           this.results = data})
+          console.log(this.results)
     }else if (this.form.value.terms === 'people') {
       this.people.getPeople(this.form.value.getStuff)
         .subscribe(data => {
           this.results = data})
+          console.log(this.results)
     }else if (this.form.value.terms === "starships"){
       this.ships.getShips(this.form.value.getStuff)
         .subscribe(data =>{
           this.results = data})
+          console.log(this.results)
     } else{
       console.log('Error')
     }

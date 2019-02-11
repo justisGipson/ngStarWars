@@ -14,10 +14,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
-import { DisplayResultsComponent } from './display-results/display-results.component';
+import { DisplayPeopleComponent } from './display-people/display-people.component';
 import { ShipService } from './services/ship.service';
 import { FilmService } from './services/film.service';
 import { PeopleService } from './services/people.service';
+import { DisplayShipComponent } from './display-ship/display-ship.component';
+import { DisplayFilmComponent } from './display-film/display-film.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { PeopleService } from './services/people.service';
     SearchComponent,
     NavComponent,
     AboutComponent,
-    DisplayResultsComponent
+    DisplayPeopleComponent,
+    DisplayShipComponent,
+    DisplayFilmComponent
   ],
   imports: [
     BrowserModule,
