@@ -52,7 +52,7 @@ h3 {
     background-color: transparent;
     border: none;
     text-decoration-line: none;
-    /* text-shadow: 0.01em 0.01em 0.15em rgb(0, 0, 0); */
+    text-shadow: 0.01em 0.01em 0.15em rgb(0, 0, 0);
     /* font-size: 1.4em; */
     text-align: center;
     position: relative;

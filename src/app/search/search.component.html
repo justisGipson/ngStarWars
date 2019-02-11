@@ -1,10 +1,14 @@
 <div class='searchField'>
   <h3>Search for People, Starships or Films from the Star Wars Universe</h3>
+  <form [formGroup]="form" (ngSubmit)='submit()'>
     <select class='options'
-      form-control='term' name='term' required>
-      <option class="options" *ngFor='let term of terms' value="{{ term }}">{{ term }}</option>
+      formControlName='terms' required>
+      <option value='people'>People</option>
+      <option value='starships'>Starships</option>
+      <option value='films'>Films</option>
     </select>
-    <input class='input' type='text' placeholder=""/>
+    <input matInput class='input' type='search' formControlName='getStuff' />
     <button class='submit' type='submit'>Search</button>
     <button class="close" type="reset"><a class="link" routerLink="">Close</a></button>
+  </form>
 </div>
