@@ -1,5 +1,5 @@
 <div *ngIf='results'>
-  <div *ngFor='let data of results.results'>
+  <div *ngFor='let data of results.results' class="cards">
     <div class="shipCard">
        <div class="shipCardContainer">
           <h3>{{ data.model }}</h3>
@@ -16,7 +16,7 @@
           <p>{{ data.starship_class }}</p>
       </div>
       <div class="filmCard">
-        <div class="filmCardContainer1">
+        <div class="filmCardContainer">
           <h3>{{ data.title }}</h3>
           <p>{{ data.episode_id }}</p>
           <p>{{ data.opening_crawl }}</p>
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="personCard">
-        <div class="personCardContainer2">
+        <div class="personCardContainer">
           <h3>{{ data.name }}</h3>
           <p>{{ data.height }}</p>
           <p>{{ data.mass }}</p>
