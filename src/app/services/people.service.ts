@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Person } from '../models/person.model';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -14,7 +16,7 @@ export class PeopleService {
 
   constructor(private http: HttpClient) { }
 
-  getPeople(getStuff){
-    return this.http.get(`https://swapi.com/api/people/?search=${getStuff}`, httpOptions)
+  getPeople(getStuff): Observable<Person[]>{
+    return this.http.get<Person[]>(`https://swapi.co/api/people/?search=${getStuff}`)
   }
 }

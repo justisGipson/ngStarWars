@@ -15,6 +15,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { DisplayResultsComponent } from './display-results/display-results.component';
+import { ShipService } from './services/ship.service';
+import { FilmService } from './services/film.service';
+import { PeopleService } from './services/people.service';
 
 
 @NgModule({
@@ -36,7 +39,7 @@ import { DisplayResultsComponent } from './display-results/display-results.compo
     MatChipsModule,
     MatButtonModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient, FilmService, PeopleService, ShipService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
