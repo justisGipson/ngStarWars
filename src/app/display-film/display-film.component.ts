@@ -18,6 +18,7 @@ export class DisplayFilmComponent implements OnInit {
   }
 
   get data(): any {
+    console.log(this._film)
     return this._film;
   }
 
