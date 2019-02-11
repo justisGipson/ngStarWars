@@ -17,7 +17,7 @@ export class ShipService {
 
   constructor(private http: HttpClient) { }
 
-  getShips(getStuff): Observable<Ship[]>{
-    return this.http.get<Ship[]>(`https://swapi.co/api/starships/?search=${getStuff}`, httpOptions)
+  getShips(getStuff): Observable<any>{
+    return this.http.get(`https://swapi.co/api/starships/?search=${getStuff}`, httpOptions)
   }
 }

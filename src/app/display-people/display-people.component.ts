@@ -7,17 +7,17 @@ import { Input } from '@angular/core';
   styleUrls: ['./display-people.component.css']
 })
 export class DisplayPeopleComponent implements OnInit {
-  public _person = {}
+  public person = []
 
   ngOnInit() {
   }
 
   @Input() set data(data: any){
-    this._person = data;
-    console.log(this._person);
+    this.person = data;
+    console.log(this.person);
   }
 
   get data(): any {
-    return this._person;
+    return this.person;
   }
 }

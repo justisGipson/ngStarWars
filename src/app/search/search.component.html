@@ -3,7 +3,7 @@
   <form [formGroup]="form" (ngSubmit)='submit()'>
     <select class='dropdown'
       formControlName='terms' required>
-      <option value='people'>People</option>
+      <option value='people' routerLink='people'>People</option>
       <option value='starships'>Starships</option>
       <option value='films'>Films</option>
     </select>
@@ -11,4 +11,16 @@
     <button class='submit' type='submit'>Search</button>
     <button class="close" type="reset"><a class="link" routerLink="">Close</a></button>
   </form>
+</div>
+
+<div *ngIf="results">
+  <app-display-ship [data]="results[0]"></app-display-ship>
+</div>
+
+<div *ngIf='results'>
+  <app-display-people [data]='results[0]'></app-display-people>
+</div>
+
+<div *ngIf='results'>
+  <app-display-film [data]='results[0]'></app-display-film>
 </div>

@@ -1,0 +1,11 @@
+.shipCard {
+    color: #f2e12b;
+    font-family: 'Press Start 2P', cursive;
+    background-color: hsla(246, 17%, 88%, 0.9);
+    border-radius: .5em;
+    position: absolute;
+    text-shadow: 0.01em 0.01em 0.11em rgb(0, 0, 0);
+    top: 60%;
+    left: 40%;
+}
+

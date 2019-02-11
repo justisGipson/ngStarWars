@@ -8,18 +8,18 @@ import { Input } from '@angular/core';
   styleUrls: ['./display-ship.component.css']
 })
 export class DisplayShipComponent implements OnInit {
-  public _ship = {}
+  public ship = {}
 
   ngOnInit() {
   }
 
   @Input() set data(data: any){
-    this._ship = data;
-    console.log(this._ship);
+    this.ship = data;
+    console.log(this.ship);
   }
 
   get data(): any {
-    return this._ship
+    return this.ship
   }
 
 }

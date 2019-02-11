@@ -7,19 +7,19 @@ import { Input } from '@angular/core';
   styleUrls: ['./display-film.component.css']
 })
 export class DisplayFilmComponent implements OnInit {
-  public _film = {}
+  public film = {}
 
   ngOnInit() {
   }
 
   @Input() set data(data: any){
-    this._film = data;
-    console.log(this._film);
+    this.film = data;
+    console.log(this.film);
   }
 
   get data(): any {
-    console.log(this._film)
-    return this._film;
+    console.log(this.film)
+    return this.film;
   }
 
 }

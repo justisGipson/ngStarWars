@@ -1,20 +1,20 @@
-<div *ngIf='results'>
-  <div *ngFor='let ship of ships' class="cards">
+<!-- <div *ngIf='results'> -->
+  <!-- <div *ngFor='let data of results' class="cards"> -->
     <div class="shipCard">
       <div class="shipCardContainer">
-        <h3>{{ _ship.model }}</h3>
-        <p>{{ _ship.manufacturer }}</p>
-        <p>{{ _ship.cost_in_credits }}</p>
-        <p>{{ _ship.length }}</p>
-        <p>{{ _ship.max_atmosphering_speed }}</p>
-        <p>{{ _ship.crew }}</p>
-        <p>{{ _ship.passengers }}</p>
-        <p>{{ _ship.cargo_capacity }}</p>
-        <p>{{ _ship.consumables }}</p>
-        <p>{{ _ship.hyperdrive_rating }}</p>
-        <p>{{ _ship.MGLT }}</p>
-        <p>{{ _ship.starship_class }}</p>
+        <p>{{ ship.model }}</p>
+        <p>{{ ship.manufacturer }}</p>
+        <p>{{ ship.cost_in_credits }}</p>
+        <p>{{ ship.length }}</p>
+        <p>{{ ship.max_atmosphering_speed }}</p>
+        <p>{{ ship.crew }}</p>
+        <p>{{ ship.passengers }}</p>
+        <p>{{ ship.cargo_capacity }}</p>
+        <p>{{ ship.consumables }}</p>
+        <p>{{ ship.hyperdrive_rating }}</p>
+        <p>{{ ship.MGLT }}</p>
+        <p>{{ ship.starship_class }}</p>
       </div>
     </div>
-  </div>
-</div>
+  <!-- </div> -->
+<!-- </div> -->

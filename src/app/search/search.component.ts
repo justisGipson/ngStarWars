@@ -13,8 +13,8 @@ import { ShipService } from '../services/ship.service'
 
 export class SearchComponent implements OnInit {
   form: FormGroup;
-  results: Object;
-  data = {};
+  results: any;
+  public data: any = [];
 
   constructor(private formBuilder: FormBuilder,
     private film: FilmService,
@@ -28,22 +28,37 @@ export class SearchComponent implements OnInit {
     })
   }
 
-  submit() {
+  testSubmit = () => {
+    this.people.getPeople(this.form.value.getStuff)
+        .subscribe(data => {
+          this.results = data.results
+          console.log(this.results)
+        })
+  }
+
+  filmsSubmit = () => {
+    this.film.getFilm(this.form.value.getStuff)
+        .subscribe(data => {
+          this.results = data.results
+          console.log(this.results)
+        })
+  }
+
+  shipsSubmit = () => {
+    this.ships.getShips(this.form.value.getStuff)
+    .subscribe(data =>{
+      this.results = data.results
+      console.log(this.results)
+    })
+  }
+
+  submit = () => {
     if (this.form.value.terms === 'films') {
-      this.film.getFilm(this.form.value.getStuff)
-        .subscribe(data => {
-          this.results = data})
-          console.log(this.results)
+      this.filmsSubmit()
     }else if (this.form.value.terms === 'people') {
-      this.people.getPeople(this.form.value.getStuff)
-        .subscribe(data => {
-          this.results = data})
-          console.log(this.results)
+      this.testSubmit();
     }else if (this.form.value.terms === "starships"){
-      this.ships.getShips(this.form.value.getStuff)
-        .subscribe(data =>{
-          this.results = data})
-          console.log(this.results)
+      this.shipsSubmit();
     } else{
       console.log('Error')
     }

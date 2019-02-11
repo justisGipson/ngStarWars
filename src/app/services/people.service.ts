@@ -17,7 +17,7 @@ export class PeopleService {
 
   constructor(private http: HttpClient) { }
 
-  getPeople(getStuff): Observable<Person[]>{
-    return this.http.get<Person[]>(`https://swapi.co/api/people/?search=${getStuff}`)
+  getPeople(getStuff): Observable<any>{
+    return this.http.get(`https://swapi.co/api/people/?search=${getStuff}`)
   }
 }
