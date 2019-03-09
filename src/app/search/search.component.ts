@@ -28,7 +28,7 @@ export class SearchComponent implements OnInit {
     })
   }
 
-  testSubmit = () => {
+  peopleSubmit = () => {
     this.people.getPeople(this.form.value.getStuff)
         .subscribe(data => {
           this.results = data.results
@@ -56,7 +56,7 @@ export class SearchComponent implements OnInit {
     if (this.form.value.terms === 'films') {
       this.filmsSubmit()
     }else if (this.form.value.terms === 'people') {
-      this.testSubmit();
+      this.peopleSubmit();
     }else if (this.form.value.terms === "starships"){
       this.shipsSubmit();
     } else{
