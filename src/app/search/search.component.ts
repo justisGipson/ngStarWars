@@ -62,6 +62,6 @@ export class SearchComponent implements OnInit {
     } else{
       console.log('Error')
     }
-    
+
   }
 }

@@ -7,7 +7,7 @@ import { DisplayPeopleComponent} from './display-people/display-people.component
 const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'people', component: DisplayPeopleComponent}
+  // { path: 'people', component: DisplayPeopleComponent}
 ];
 
 @NgModule({
